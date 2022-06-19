@@ -135,9 +135,10 @@ const promptUser = () => {
 
 promptUser()
     .then((data) => {
+     //data = data[0];
         const content = generateMarkdown(data);
         console.log(content);
-        fs.watchFile("./temp/README.md", content, (err2) => {
+        fs.writeFile("./temp/README.md", content, (err2) => {
             if (err2) {
                 console.log(err2);
                 return;

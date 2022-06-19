@@ -38,39 +38,40 @@ function renderLicenseSection(license) {
 
 
 function generateMarkdown(data) {
+  console.log(data.projectTitle);
   let license = data.projectLicense;
   return `# ${data.projectTitle}
   ${renderLicenseBadge(license)}
   
 ## Table of Contents:
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
   ${renderLicenseLink(license)}
-  - [Contribution](#Contribution)
-  - [Test](#Test)
-  - [Questions](#Questions)
+  - [Contribution](#contribution)
+  - [Test](#test)
+  - [Questions](#questions)
 
 
 ## Description  
   ${data.description}
 
 ## Installation  
-  ${data.installation}
+  ${data.installationInstructions}
  
 ## Usage  
-${data.usage}
+${data.usageInstructions}
 
 ## Contribution  
-  ${data.contribute}
+  ${data.contributionInstructions}
  
 ## Tests  
-  ${data.test}
+  ${data.testInstructions}
   
 ## Questions  
 If you have any with additional questions reach out to me at:  
-  * [${data.email}}](${data.email})  
-  * [github.com/${data.github}}](https://github.com/${data.github})  
+  * [${data.emailInstructions}](${data.emailInstructions})  
+  * [github.com/${data.githubInstructions}](https://github.com/${data.githubInstructions})  
   
   ${renderLicenseSection(license)}
 `;
