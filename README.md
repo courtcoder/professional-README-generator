@@ -6,4 +6,8 @@
 A README generator for users to help them automatically generate a README file for their projects. 
 
 ## Walkthrough Video: 
-<iframe src="https://drive.google.com/file/d/1gX9cTQ88f_Mm_lzGb3j7gmznA-jQ8-RG/preview" width="640" height="480"></iframe>
+
+
+
+https://user-images.githubusercontent.com/101368797/174503086-604f3aaf-c607-456d-817c-0376bc6d3da5.mp4
+
